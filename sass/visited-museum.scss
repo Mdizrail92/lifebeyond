@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+    scroll-behavior: smooth;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(../images/museum-gate.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    
+}
+
+.saber {
+
+  width: 6px;
+  height: 180px;
+  background-color: white;
+  border-radius: 6px/10px;
+  box-shadow: 0px 0px 10px,
+              0px 0px 2px inset;
+  transform: translateX(40px) translateY(40px);
+  animation: glow 1.5s linear infinite;
+
+}
+
+.saber:before{
+  content: "";
+
+  height: 12px;
+  background-image: linear-gradient(to right,
+                                    transparent 1px,
+                                    rgba(255, 255, 255, 0.4) 1px,
+                                    rgba(255, 255, 255, 0.8) 3px,
+                                    rgba(255, 255, 255, 0.3) 4px,
+                                    rgba(  0,   0,   0, 0.2) 7px,
+                                    transparent 7px),
+                    linear-gradient(to bottom,
+                                    orange 3px, black 3px, black 4px,
+                                    transparent 4px, transparent 8px,
+                                    black 8px, black 9px, orange 9px,
+                                    orange 11px, black 11px, black 12px),
+                    linear-gradient(to left,
+                                    transparent 1px, orange 1px,
+                                    orange 7px, transparent 7px);
+  box-shadow: 1px 25px 0px 0px #555,
+              2px 25px 0px 0px silver,
+              2px 25px 0px 1px #222;
+  
+}
+
+.saber:after{
+  position: absolute;
+ 
+  background-image:
+                    linear-gradient(to right,
+                                    rgba(255, 255, 255, 0) 0px,
+                                    rgba(255, 255, 255, 0.7) 2px,
+                                    rgba(255, 255, 255, 0.2) 3px,
+                                    rgba(  0,   0,   0, 0.5) 8px),
+                    linear-gradient(to bottom, grey 5px, black  5px,
+                                    grey 6px, grey 7px, black  7px,
+                                    grey 8px, grey 9px, black  9px,
+                                    grey 10px, grey 11px, black 11px,
+                                    grey 12px, grey 16px,
+                                    black 16px, black 17px,
+                                    orange 17px, orange 20px,
+                                    black 20px, black 21px, transparent 21px,
+                                    transparent 57px, black 57px, orange 58px),
+                    linear-gradient(to right,
+                                    silver 1px, black 1px, black 2px,
+                                    transparent 3px, transparent 3px,
+                                    silver 3px, silver 5px, black 5px, grey 6px,
+                                    transparent 6px, transparent 7px,
+                                    silver 7px, silver 8px),
+                    linear-gradient(to bottom,
+                                    grey 0px, grey 60px);
+  content: "";
+}
+
+@keyframes glow {
+  from {
+    color: rgb(183, 247, 255); 
+    box-shadow: 0 0 9px rgb(95, 177, 255); 
+  }
+  50% {
+    color: rgb(183, 247, 255); 
+    box-shadow: 0 0 36px rgb(85, 173, 255); 
+  }
+  to {
+    color: rgb(183, 247, 255); 
+    box-shadow: 0 0 9px rgb(86, 161, 231); 
+  }
+}
+
+.home {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    h1 {
+        color: white;
+        display: flex;
+        font-size: 30px;
+        text-transform: uppercase;
+        justify-content: center;
+        word-spacing: 3px;
+        letter-spacing: 4px;
+        text-shadow: 2px 2px 6px #282827;
+    }
+    h2 {
+        color: white;
+        margin-top: -10px;
+    }
+ 
+}
+
+#go{
+        background-color: #2d86b6;
+      margin-bottom: 100px;
+     
+        &:hover {
+            color: #255784;
+            background-color: #40a3f3;
+            box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+            transition-delay: 0.3s;
+            transition-duration: 0.4s;
+        }
+    }
+
+#gate-one
+{
+    z-index:1;
+    color: white;
+    text-align: right;
+  position: absolute;
+    line-height: normal;
+    top: 70%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    h3{
+      font-weight: 1000;
+    }
+    h4{
+      font-weight: 300;
+    }
+    p{
+      font-weight: 300;
+      font-size: small;
+    }
+  
+  
+}
+#gate-two
+{
+  
+    color: white;
+    position: absolute;
+    top: 70%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    h3{
+      font-weight: 1000;
+    }
+    h4{
+      font-weight: 300;
+    }
+    p{
+      font-weight: 300;
+      font-size: small;
+    }
+  
+  
+}
+
+@media only screen and (max-width: 600px){
+   
+  .home{
+    font-size: 20px;
+  }
+  #gate-one
+    {
+        
+    text-align: right;
+    position: none;
+    top: 45%;
+    left: 0%;
+    transform: translate(0%, 0%);
+    }
+    #gate-two
+    {
+             
+  position: none;
+    top: 70%;
+    left: 0%;
+    transform: translate(0%, 0%);
+    
+    }
+  
+  }
+
+
+
+
+  @function random_range($min, $max) {
+    $rand: random();
+    $random_range: $min + floor($rand * (($max - $min) + 1));
+    @return $random_range;
+  }
+  
+  .snow {
+    $total: 200;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+  
+    @for $i from 1 through $total {
+      $random-x: random(1000000) * 0.0001vw;
+      $random-offset: random_range(-100000, 100000) * 0.0001vw;
+      $random-x-end: $random-x + $random-offset;
+      $random-x-end-yoyo: $random-x + ($random-offset / 2);
+      $random-yoyo-time: random_range(30000, 80000) / 100000;
+      $random-yoyo-y: $random-yoyo-time * 100vh;
+      $random-scale: random(10000) * 0.0001;
+      $fall-duration: random_range(10, 30) * 1s;
+      $fall-delay: random(30) * -1s;
+  
+      &:nth-child(#{$i}) {
+        opacity: random(10000) * 0.0001;
+        transform: translate($random-x, -10px) scale($random-scale);
+        animation: fall-#{$i} $fall-duration $fall-delay linear infinite;
+      }
+  
+      @keyframes fall-#{$i} {
+        #{percentage($random-yoyo-time)} {
+          transform: translate($random-x-end, $random-yoyo-y) scale($random-scale);
+        }
+  
+        to {
+          transform: translate($random-x-end-yoyo, 100vh) scale($random-scale);
+        }
+      }
+    }
+  }
+  

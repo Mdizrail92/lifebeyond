@@ -1,0 +1,421 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lora', serif;
+}
+
+.carousel-item {
+  background-color: black;
+  color: white;
+}
+
+.carousel-item em {
+  color: #fcdd89;
+  font-style: normal;
+}
+
+.carbon::before {
+  content: 'C 006';
+  -webkit-animation-name: head;
+  animation-name: head;
+  color: coral;
+  -webkit-animation-duration: 6s;
+  animation-duration: 6s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes head {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+    content: "[He] 2s² 2p²";
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    content: "Period 2";
+  }
+  65% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+    content: "Group 14";
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    content: "P-block";
+  }
+}
+
+@keyframes head {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+    content: "[He] 2s² 2p²";
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    content: "Period 2";
+  }
+  65% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+    content: "Group 14";
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    content: "P-block";
+  }
+}
+
+.silicon::before {
+  content: 'Period 3 ';
+  -webkit-animation-name: head1;
+  animation-name: head1;
+  color: coral;
+  -webkit-animation-duration: 8s;
+  animation-duration: 8s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes head1 {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+    content: "ᴀᴛᴏᴍɪᴄ ᴡᴇɪɢʜᴛ: 28.086";
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    content: "Mᴇʟᴛɪɴɢ ᴘᴏɪɴᴛ: ¹⁶⁸⁷ ᴷ";
+  }
+  65% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+    content: " Bᴏɪʟɪɴɢ ᴘᴏɪɴᴛ: ³⁵³⁸ ᴷ";
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    content: "ᴰᵉⁿˢⁱᵗʸ᠄ ²˙³²⁹⁰ ᵍ∕ᶜᵐ³";
+  }
+}
+
+@keyframes head1 {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+    content: "ᴀᴛᴏᴍɪᴄ ᴡᴇɪɢʜᴛ: 28.086";
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    content: "Mᴇʟᴛɪɴɢ ᴘᴏɪɴᴛ: ¹⁶⁸⁷ ᴷ";
+  }
+  65% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+    content: " Bᴏɪʟɪɴɢ ᴘᴏɪɴᴛ: ³⁵³⁸ ᴷ";
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    content: "ᴰᵉⁿˢⁱᵗʸ᠄ ²˙³²⁹⁰ ᵍ∕ᶜᵐ³";
+  }
+}
+
+.wise::before {
+  content: 'ᵈⁱˢᵗᵃⁿᶜᵉ᠄ ⁷ ˡⁱᵍʰᵗ ʸᵉᵃʳˢ';
+  -webkit-animation-name: properties;
+  animation-name: properties;
+  color: coral;
+  -webkit-animation-duration: 6s;
+  animation-duration: 6s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes properties {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    content: "ᵐᵃˢˢ᠄ ³⁻¹⁰ˣ ʲᵘᵖⁱᵗᵉʳ";
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    content: "ᵗᵉᵐᵖᵉʳᵃᵗᵘʳᵉ᠄ ⁻⁵⁰ ⁻ ⁻¹³`ᶜ";
+  }
+}
+
+@keyframes properties {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    content: "ᵐᵃˢˢ᠄ ³⁻¹⁰ˣ ʲᵘᵖⁱᵗᵉʳ";
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    content: "ᵗᵉᵐᵖᵉʳᵃᵗᵘʳᵉ᠄ ⁻⁵⁰ ⁻ ⁻¹³`ᶜ";
+  }
+}
+
+.GJ::before {
+  content: 'ᵈⁱˢᵗᵃⁿᶜᵉ᠄ ˜³¹ ˡⁱᵍʰᵗ ʸᵉᵃʳˢ';
+  -webkit-animation-name: gj;
+  animation-name: gj;
+  color: coral;
+  -webkit-animation-duration: 6s;
+  animation-duration: 6s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes gj {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    content: "ᵐᵃˢˢ᠄ ˜⁷ˣ ᴱᵃʳᵗʰ";
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    content: "ᵗᵉᵐᵖᵉʳᵃᵗᵘʳᵉ᠄ ˜⁻⁵³`ᶜ";
+  }
+}
+
+@keyframes gj {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    content: "ᵐᵃˢˢ᠄ ˜⁷ˣ ᴱᵃʳᵗʰ";
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    content: "ᵗᵉᵐᵖᵉʳᵃᵗᵘʳᵉ᠄ ˜⁻⁵³`ᶜ";
+  }
+}
+
+.titan::before {
+  content: 'ᵈⁱˢᵗᵃⁿᶜᵉ᠄ ¹˙² ᵐⁱˡˡⁱᵒⁿ ᵏᵐ';
+  -webkit-animation-name: titan;
+  animation-name: titan;
+  color: coral;
+  -webkit-animation-duration: 6s;
+  animation-duration: 6s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes titan {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    content: "ᵐᵃˢˢ᠄ ˙⁰²³ˣ ᵉᵃʳᵗʰ";
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    content: "ᵗᵉᵐᵖᵉʳᵃᵗᵘʳᵉ᠄ ⁻¹⁷⁹";
+  }
+}
+
+@keyframes titan {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    content: "ᵐᵃˢˢ᠄ ˙⁰²³ˣ ᵉᵃʳᵗʰ";
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    content: "ᵗᵉᵐᵖᵉʳᵃᵗᵘʳᵉ᠄ ⁻¹⁷⁹";
+  }
+}
+
+.small-saber {
+  height: 3px;
+  width: 120px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  left: 45%;
+  top: auto;
+  -webkit-box-shadow: 0px 0px 10px, 0px 0px 2px inset;
+  box-shadow: 0px 0px 10px, 0px 0px 2px inset;
+  -webkit-transform: translate(0%, -45%);
+  transform: translate(0%, -45%);
+  -webkit-animation: glow 1.5s linear infinite;
+  animation: glow 1.5s linear infinite;
+}
+
+.small-saber:after {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0px, rgba(255, 255, 255, 0.7) 2px, rgba(255, 255, 255, 0.2) 3px, rgba(0, 0, 0, 0.5) 8px), linear-gradient(to bottom, grey 5px, black 5px, grey 6px, grey 7px, black 7px, grey 8px, grey 9px, black 9px, grey 10px, grey 11px, black 11px, grey 12px, grey 16px, black 16px, black 17px, orange 17px, orange 20px, black 20px, black 21px, transparent 21px, transparent 57px, black 57px, orange 58px), linear-gradient(to right, silver 1px, black 1px, black 2px, transparent 3px, transparent 3px, silver 3px, silver 5px, black 5px, grey 6px, transparent 6px, transparent 7px, silver 7px, silver 8px), linear-gradient(to bottom, grey 0px, grey 60px);
+  content: "";
+}
+
+@-webkit-keyframes glow {
+  from {
+    color: #b7f7ff;
+    -webkit-box-shadow: 0 0 9px #5fb1ff;
+    box-shadow: 0 0 9px #5fb1ff;
+  }
+  50% {
+    color: #b7f7ff;
+    -webkit-box-shadow: 0 0 36px #55adff;
+    box-shadow: 0 0 36px #55adff;
+  }
+  to {
+    color: #b7f7ff;
+    -webkit-box-shadow: 0 0 9px #56a1e7;
+    box-shadow: 0 0 9px #56a1e7;
+  }
+}
+
+@keyframes glow {
+  from {
+    color: #b7f7ff;
+    -webkit-box-shadow: 0 0 9px #5fb1ff;
+    box-shadow: 0 0 9px #5fb1ff;
+  }
+  50% {
+    color: #b7f7ff;
+    -webkit-box-shadow: 0 0 36px #55adff;
+    box-shadow: 0 0 36px #55adff;
+  }
+  to {
+    color: #b7f7ff;
+    -webkit-box-shadow: 0 0 9px #56a1e7;
+    box-shadow: 0 0 9px #56a1e7;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .small-saber {
+    left: 35%;
+    top: auto;
+    -webkit-transform: translate(0%, -35%);
+    transform: translate(0%, -35%);
+  }
+}
+
+.social-icons i {
+  color: white;
+  margin: 0px 0px 0px 5px;
+  font-size: 20px;
+}
+
+ul li {
+  display: inline;
+  margin: 0 5px;
+}
+
+footer hr {
+  color: white;
+}
+
+footer ul {
+  margin-right: 28px;
+}
+
+/*# sourceMappingURL=aliens.css.map */
+
+
